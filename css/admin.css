@@ -1,0 +1,99 @@
+/* ANIMATION RIGHT TO LEFT*/
+@-webkit-keyframes rightToLeft{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(300px);
+	    -moz-transform: translateX(300px);
+	    transform: translateX(300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+.rightToLeft{
+    -webkit-animation: rightToLeft 2s ease-in-out;
+    -moz-animation: rightToLeft 2s ease-in-out;
+    -o-animation: rightToLeft 2s ease-in-out;
+    -ms-animation: rightToLeft 2s ease-in-out;
+    animation: rightToLeft 2s ease-in-out;	
+	
+}
+
+
+.wpfbint_wrap .premium_msg{
+		display:none;
+		background:#F08080;
+		border:1px solid red;
+		text-align:center;
+		padding:10px;
+		margin:10px;
+}
+
+/* === ajaxify === */
+.wpfbint_wrap.loading > * {
+    opacity:0.2;
+}
+
+.wpfbint_wrap.loading:before {
+    position:fixed;
+    content: "Loading...";
+    font-size:2em;
+    padding: 22px;
+    background: #000;
+    background: url(../images/loading.gif) no-repeat center center;
+    color: #777;
+    width: 50%;
+    height:50%;
+    margin-left:15%;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.wpfbint_wrap .premium_img{
+	width:150px;
+	height:150px;	
+}
+.wpfbint_wrap{
+		overflow:hidden;
+		padding-top:10px;
+		padding-bottom:10px;
+}
+
+.wpfbint_wrap .left_wrap{
+		float:left;
+		width:70%;
+}
+.wpfbint_wrap  .right_wrap{
+		float:right;
+		padding-left:10px;
+		border-right:1px solid #fff;
+		width:28%;
+		background: #fff;
+		border-radius:10px 0 0 10px;
+		border:3px solid orange;
+		font-size:1.3em;
+		box-shadow:0 5px 5px #777;-webkit-box-shadow:0 5px 5px #777;-moz-box-shadow:0 5px 5px #777;
+}
+.wpfbint_wrap  .right_wrap ul{
+		font-size:12px;
+		list-style:square;
+		padding-left:20px;
+}
+
+.wpfbint_wrap .right_wrap h2{
+	border-bottom:1px solid #0085ba;
+	padding-bottom:5px;
+}
